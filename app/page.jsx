@@ -1,6 +1,6 @@
 
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Card } from 'components/card';
 
 export const metadata = {
