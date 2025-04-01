@@ -2,10 +2,7 @@
 
 import { useState } from 'react';
 import { Card } from 'components/card';
-
-export const metadata = {
-  title: 'Server Connection Time'
-};
+import Head from 'next/head';
 
 export default function ServerTimePage() {
   const [connectionTime, setConnectionTime] = useState(null);
@@ -43,6 +40,9 @@ export default function ServerTimePage() {
 
   return (
     <>
+      <Head>
+        <title>Server Connection Time</title>
+      </Head>
       <h1 className="mb-8">Server Connection Time</h1>
       <div className="flex flex-col gap-6 max-w-2xl">
         <Card>
